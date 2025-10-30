@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #0A0A0A;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#input-el,
+#input-btn {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: #e5e5e5 1px solid;
+}
+
+#input-btn {
+  cursor: pointer;
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  max-width: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#input-btn:hover {
+  background-color: #262626;
+  color: #e5e5e5;
+}
+
+.fa-regular {
+  color: #e5e5e5;
+  font-size: 1rem;
+}
