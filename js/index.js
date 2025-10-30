@@ -10,16 +10,26 @@ const ulEl = document.querySelector("#ul-el");
 const saveBtn = document.querySelector("#input-btn");
 
 saveBtn.addEventListener("click", () => {
+  if(inputEl.value.length === 0) {
+    alert("Warning!\nThe input is empty!")
+  } else {
   myLeads.push(inputEl.value)
   inputEl.value = ""
   renderLeads()
+  }
 }
 );
 
 function renderLeads() {
   listItem = ""
   myLeads.forEach(element => {
-    listItem += `<li>${element}</li>`
+    listItem += `<li>
+                      <a 
+                        href="${element}" 
+                        target="_blank">
+                          ${element}
+                      </a>
+                </li>`
   });
   ulEl.setHTMLUnsafe(listItem)
 }
